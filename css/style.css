@@ -1,0 +1,79 @@
+:root {
+    --bgColor: whitesmoke;
+    --boxColor: #7E64FF;
+    --hoverBoxColor: #3E20D5;
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+::selection {
+    background-color: white;
+    color: #6349E7;
+}
+
+body {
+    background-color: var(--bgColor);
+}
+
+.container {
+    width: 559px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+.title{
+    width: 100%;
+    background-color: #f25;
+    text-align: center;
+    background-color: var(--hoverBoxColor);
+    color: whitesmoke;
+    padding: 10px 0;
+    font-size: 2rem;
+    margin: 10px auto;
+}
+
+.title> span{
+    font-weight: bold;
+}
+
+.game{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.game > .box{
+    width: 165px;
+    height: 165px;
+    background-color: var(--boxColor);
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    font-size: 5rem;
+}
+
+.game > .box:hover{
+    background-color: var(--hoverBoxColor);
+    cursor: pointer;
+}
